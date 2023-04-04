@@ -16,9 +16,10 @@ export default Controller.extend({
 
   @discourseComputed("model.path")
   showSignupButton() {
-    return (
-      this.get("model.path") === "login" && this.get("application.canSignUp")
-    );
+    return false;
+    // return (
+    //   this.get("model.path") === "login" && this.get("application.canSignUp")
+    // );
   },
 
   @discourseComputed

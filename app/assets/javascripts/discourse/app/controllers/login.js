@@ -125,7 +125,8 @@ export default Controller.extend(ModalFunctionality, {
 
   @discourseComputed("loggingIn", "application.canSignUp")
   showSignupLink(loggingIn, canSignUp) {
-    return canSignUp && !loggingIn;
+    return false;
+    // return canSignUp && !loggingIn;
   },
 
   showSpinner: readOnly("loggingIn"),
