@@ -12,7 +12,7 @@
         <PluginOutlet @name="below-static" @connectorTagName="div" />
 
         {{#if this.anyButtons}}
-          <div class="body-page-button-container">
+          <div>
             {{#if this.showSignupButton}}
               <DButton
                 @action={{route-action "showCreateAccount"}}
@@ -31,6 +31,9 @@
             {{/if}}
           </div>
         {{/if}}
+        <p>
+          To create an account download the app!
+        </p>
       </div>
     </div>
   </WatchRead>
